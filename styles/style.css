@@ -32,15 +32,13 @@
   width: 183px;
   height: 32px;
   padding: 0px;
-  margin-top: 30px;
-  margin-left: 64px;
+  top: 30px;
+  left: 64px;
   align-self: flex-start;
-  top: 0;
-  left: 0;
   z-index: 1;
 }
 
-.header_title {
+.header__title {
   width: 730px;
   font-size: 102px;
   font-weight: bold;
@@ -50,17 +48,15 @@
   z-index: 5;
 }
 
-.header_subtitle {
+.header__subtitle {
   position: absolute;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin-left: 64px;
-  margin-bottom: 30px;
+  left: 64px;
+  bottom: 30px;
   align-self: center;
-  bottom: 0;
-  left: 0;
   z-index: 5;
 }
 
@@ -69,7 +65,7 @@
   text-decoration: none;
 }
 
-.header_main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -78,7 +74,7 @@
   z-index: 4;
 }
 
-.header_square-pic {
+.header__square-pic {
   background-color: #2f80ed;
   position: absolute;
   margin-top: 64px;
@@ -123,7 +119,7 @@
   color: #2f80ed;
   font-style: normal;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
 }
 
 .two-columns__main-text {
@@ -197,9 +193,6 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__text2 {
   margin-bottom: 0px;
   margin-top: 20px;
 }
@@ -215,7 +208,6 @@
 
 .feynman__image {
   position: absolute;
-  background-image: url(../images/feynman.png);
   width: 867px;
   height: 637px;
   bottom: 0px;
@@ -355,9 +347,9 @@
 }
 
 .footer__column_content_copyright {
-  position: relative;
-  width: 50%;
   flex-basis: 711px;
+  flex-direction: column;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -368,10 +360,7 @@
 }
 
 .footer__author {
-  position: absolute;
   margin: 18px 0 18px 0;
-  bottom: 0px;
-  left: 0px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -382,6 +371,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .footer__column-links {
@@ -390,7 +380,7 @@
   font-weight: normal;
   list-style-type: none;
   padding: 0;
-  margin-right: 10px;
+  margin-bottom: 16px;
   /*list-style: none;*/
   color: white;
   text-decoration: none;
